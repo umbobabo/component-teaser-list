@@ -16,7 +16,6 @@
   "files": [
     "*.js",
     "*.css",
-    "assets/*",
     "!karma.conf.js",
     "!testbundle.js"
   ],
@@ -104,7 +103,7 @@
   "config": {
     "lint_opts": "--ignore-path .gitignore --ext .es6",
     "testbundle_opts": "-r react -r .:./index.es6 -r ./example.js:example ./test/index.js -o testbundle.js",
-    "ghpages_files": "*.html *.css *.js assets/"
+    "ghpages_files": "*.html *.css *.js"
   },
   "scripts": {
     "ci": "./build.sh",
@@ -136,6 +135,9 @@
   },
   "devDependencies": {
     "@economist/component-devpack": "^3.4.2",
+    "@economist/component-grid": "^1.1.0",
+    "@economist/component-palette": "^1.1.3",
+    "@economist/component-typography": "^1.1.3",
     "babel": "^5.8.23",
     "babelify": "^6.3.0",
     "browser-sync": "^2.8.2",
@@ -156,6 +158,7 @@
     "npm-watch": "0.0.1",
     "parallelshell": "^2.0.0",
     "pre-commit": "^1.0.10",
+    "react-addons-test-utils": "^0.14.0-rc1",
     "watchify": "^3.4.0"
   },
   "pre-commit": [

@@ -1,4 +1,3 @@
-# component-teaser
+# component-teaser-list
 
-The teaser component is the basic element for the creation of collections.
-This component is primarily developed to be used in lists of articles or blog posts. 
+The teaser-list component accept an array of teaser configuration JSON objects in the "list" attributes and create the output.
