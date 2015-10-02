@@ -18,7 +18,7 @@ const list = [
     },
     itemType: `http://schema.org/BlogPosting`,
     itemProp: `blogPost`,
-    teaserId: 1,
+    teaserId: `1`,
   },
   {
     image: {
@@ -35,7 +35,7 @@ const list = [
     },
     itemType: `http://schema.org/BlogPosting`,
     itemProp: `blogPost`,
-    teaserId: 2,
+    teaserId: `2`,
   },
   {
     image: {
@@ -52,7 +52,7 @@ const list = [
     },
     itemType: `http://schema.org/BlogPosting`,
     itemProp: `blogPost`,
-    teaserId: 3,
+    teaserId: `3`,
   },
 ];
 export default (
