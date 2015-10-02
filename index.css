@@ -1,3 +1,5 @@
+@import "@economist/component-teaser";
+
 .teaser-list .teaser {
   border-bottom: solid 1px var(--color-london);
   padding: var(--grid-spacing-sheep) var(--grid-gutter-m);
