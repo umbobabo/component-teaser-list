@@ -1,6 +1,6 @@
 {
   "name": "@economist/component-teaser-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reusable teaser",
   "author": "The Economist (http://economist.com)",
   "license": "MIT",
@@ -127,13 +127,13 @@
     "watch": "parallelshell 'npm run doc:watch' 'npm run prepublish:watch' 'npm run serve'"
   },
   "dependencies": {
-    "@economist/component-teaser": "^1.0.1",
-    "react": "^0.14.0-rc1"
+    "@economist/component-teaser": "^1.0.1"
   },
   "peerDependencies": {
-    "react": "~0.14.0-rc"
+    "react": "^0.14.0-rc||^0.14.0"
   },
   "devDependencies": {
+    "react": "^0.14.0-rc||^0.14.0",
     "@economist/component-devpack": "^3.4.2",
     "@economist/component-grid": "^1.1.0",
     "@economist/component-palette": "^1.1.3",
