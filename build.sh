@@ -2,6 +2,8 @@
 
 SSH_KEY="${1:-/root/.ssh/id_rsa}"
 DOCKER_IMAGE="economistprod/node4-base"
+HOST_IP=$(ip route get 1 | awk '{print $NF;exit}')
+SINOPIA_URL="http://${HOST_IP}:4873"
 
 [[ ${NPM_TOKEN:-} = '' ]] && { echo "NPM_TOKEN empty"; exit 1; }
 [[ ${SAUCE_ACCESS_KEY:-} = '' ]] && { echo "SAUCE_ACCESS_KEY empty"; exit 2; }
