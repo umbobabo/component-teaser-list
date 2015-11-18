@@ -11,7 +11,7 @@ export default class TeaserList extends React.Component {
     const teaserList = [];
     this.props.list.map((teaser) => {
       teaserList.push(
-        <Teaser {...teaser} key={teaser.teaserId} />
+        <Teaser {...teaser} key={teaser.key || teaser.teaserId} />
       );
     });
     return (
