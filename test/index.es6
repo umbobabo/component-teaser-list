@@ -70,7 +70,6 @@ describe(`A teaser`, () => {
       const component = shallowRenderer.getRenderOutput();
       component.props.children.length.should.equal(3);
       component.props.children[0].type.should.be.a('function');
-      component.props.children[0].type.name.should.equal('Teaser');
     });
   });
 });
