@@ -5,9 +5,9 @@
 }
 
 .teaser-list .teaser {
-  padding: var(--grid-spacing-donkey) 0;
+  padding: var(--teaserlist-teaser-padding, var(--grid-spacing-donkey)) 0;
 }
 
 .teaser-list .teaser + .teaser {
-  border-top: solid 1px var(--color-london);
+  border-top: solid 1px var(--teaserlist-border-color, var(--color-london));
 }
