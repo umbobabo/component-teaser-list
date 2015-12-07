@@ -1,6 +1,14 @@
 @import "@economist/component-teaser";
 
+.teaser-list {
+  font-size: 1rem;
+}
+
 .teaser-list .teaser {
-  border-bottom: solid 1px var(--color-london);
-  padding: var(--grid-spacing-sheep) 0;
+  padding: var(--teaserlist-teaser-padding, var(--grid-spacing-donkey)) 0;
+}
+
+.teaser-list + .teaser-list,
+.teaser-list .teaser + .teaser {
+  border-top: solid 1px var(--teaserlist-border-color, var(--color-london));
 }
