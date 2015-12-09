@@ -4,11 +4,11 @@
   font-size: 1rem;
 }
 
-.teaser-list .teaser {
+.teaser-list > * {
   padding: var(--teaserlist-teaser-padding, var(--grid-spacing-donkey)) 0;
 }
 
 .teaser-list + .teaser-list,
-.teaser-list .teaser + .teaser {
+.teaser-list > * + * {
   border-top: solid 1px var(--teaserlist-border-color, var(--color-london));
 }
